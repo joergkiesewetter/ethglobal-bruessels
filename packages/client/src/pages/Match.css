@@ -1,0 +1,100 @@
+
+.gameScroll {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#gameMap {
+  table-layout: fixed;
+  --bg-size: 27px;
+  --number-size: 13px;
+  border-spacing: 0px;
+  top: -50%;
+  left: 50%;
+  /* width: 100px; */
+}
+
+#gameMap td {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-size: var(--bg-size);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-color: #dcdcdc;
+  color: white;
+  padding: 0px;
+  overflow: hidden;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  min-width: var(--cell-size);
+  min-height: var(--cell-size);
+  max-width: var(--cell-size);
+  max-height: var(--cell-size);
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#topLeftContainer {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #dcdcdc;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 8px;
+  color: black;
+}
+
+#topRightContainer {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #dcdcdc;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 8px;
+  color: black;
+}
+
+#bottomLeftContainer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #dcdcdc;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 8px;
+  color: black;
+}
+
+#bottomRightContainer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #dcdcdc;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 8px;
+  color: black;
+}
+
+#playerList th {
+  padding: 4px;
+}
+
+#gameMap {
+  font-size: smaller;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
